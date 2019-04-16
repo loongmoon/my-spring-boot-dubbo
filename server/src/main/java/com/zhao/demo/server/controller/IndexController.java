@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class IndexController {
-    @Reference(version = "1.0.0", url = "dubbo://127.0.0.1:20550", check = false)
+    @Reference(version = "1.0.0", check = false)
     private SecondService secondService;
 
     @RequestMapping("/")
